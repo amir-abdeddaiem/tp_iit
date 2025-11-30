@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Quizz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experiences.html">Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="evenements.html">Événements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="matieres.html">Matières</a></li>
+                    <li class="nav-item"><a class="nav-link" href="passions.html">Passions</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="quizz.html">Quizz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="temoignage.html">Témoignage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-4">
+        <section>
+            <h2 class="text-center mb-5">Testez vos connaissances HTML/CSS</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="quiz-form">
+
+                        <!-- Question 1 -->
+                        <div class="card question-card" id="card-q1">
+                            <div class="card-body">
+                                <h5 class="card-title">1. Que signifie HTML ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                                    <label class="form-check-label" for="q1a">Hyper Text Make Link</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                                    <label class="form-check-label" for="q1b">Hyper Text Markup Language</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                                    <label class="form-check-label" for="q1c">Home Tool Markup Language</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="card question-card" id="card-q2">
+                            <div class="card-body">
+                                <h5 class="card-title">2. Quelle balise est utilisée pour le plus grand titre ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+                                    <label class="form-check-label" for="q2a">&lt;h1&gt;</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                                    <label class="form-check-label" for="q2b">&lt;head&gt;</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+                                    <label class="form-check-label" for="q2c">&lt;header&gt;</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="card question-card" id="card-q3">
+                            <div class="card-body">
+                                <h5 class="card-title">3. Quel attribut est utilisé pour définir une classe en HTML ?
+                                </h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                                    <label class="form-check-label" for="q3a">cls</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                                    <label class="form-check-label" for="q3b">classname</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                                    <label class="form-check-label" for="q3c">class</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="card question-card" id="card-q4">
+                            <div class="card-body">
+                                <h5 class="card-title">4. Quelle propriété CSS change la couleur du texte ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+                                    <label class="form-check-label" for="q4a">text-color</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                                    <label class="form-check-label" for="q4b">color</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+                                    <label class="form-check-label" for="q4c">font-color</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="card question-card" id="card-q5">
+                            <div class="card-body">
+                                <h5 class="card-title">5. Comment insérer un commentaire en HTML ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5a" value="a">
+                                    <label class="form-check-label" for="q5a">&lt;!-- Commentaire --&gt;</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+                                    <label class="form-check-label" for="q5b">// Commentaire</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5c" value="c">
+                                    <label class="form-check-label" for="q5c">/* Commentaire */</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 6 -->
+                        <div class="card question-card" id="card-q6">
+                            <div class="card-body">
+                                <h5 class="card-title">6. Quelle balise est utilisée pour créer une liste à puces ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6a" value="a">
+                                    <label class="form-check-label" for="q6a">&lt;ol&gt;</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6b" value="b">
+                                    <label class="form-check-label" for="q6b">&lt;list&gt;</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6c" value="c">
+                                    <label class="form-check-label" for="q6c">&lt;ul&gt;</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 7 -->
+                        <div class="card question-card" id="card-q7">
+                            <div class="card-body">
+                                <h5 class="card-title">7. Quel attribut HTML est utilisé pour définir le style en ligne
+                                    ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7a" value="a">
+                                    <label class="form-check-label" for="q7a">css</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7b" value="b">
+                                    <label class="form-check-label" for="q7b">style</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7c" value="c">
+                                    <label class="form-check-label" for="q7c">font</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 8 -->
+                        <div class="card question-card" id="card-q8">
+                            <div class="card-body">
+                                <h5 class="card-title">8. Quelle est la balise correcte pour un lien hypertexte ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8a" value="a">
+                                    <label class="form-check-label" for="q8a">&lt;a href="url"&gt;Lien&lt;/a&gt;</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8b" value="b">
+                                    <label class="form-check-label" for="q8b">&lt;a url="url"&gt;Lien&lt;/a&gt;</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8c" value="c">
+                                    <label class="form-check-label" for="q8c">&lt;link
+                                        href="url"&gt;Lien&lt;/link&gt;</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 9 -->
+                        <div class="card question-card" id="card-q9">
+                            <div class="card-body">
+                                <h5 class="card-title">9. Comment sélectionner un élément avec l'id "demo" en CSS ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9a" value="a">
+                                    <label class="form-check-label" for="q9a">.demo</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9b" value="b">
+                                    <label class="form-check-label" for="q9b">demo</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9c" value="c">
+                                    <label class="form-check-label" for="q9c">#demo</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 10 -->
+                        <div class="card question-card" id="card-q10">
+                            <div class="card-body">
+                                <h5 class="card-title">10. Quelle balise est utilisée pour insérer une image ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10a" value="a">
+                                    <label class="form-check-label" for="q10a">&lt;image src="url"&gt;</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10b" value="b">
+                                    <label class="form-check-label" for="q10b">&lt;img src="url"&gt;</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10c" value="c">
+                                    <label class="form-check-label" for="q10c">&lt;pic src="url"&gt;</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">Valider</button>
+                        </div>
+                    </form>
+
+                    <div id="quiz-result" class="result-box mt-4"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
